@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 800" width="1600" height="800" role="img" aria-label="Wanderweg am Morgen">
+  <rect width="1600" height="800" fill="#bcd9e8"/>
+  <circle cx="300" cy="160" r="70" fill="#fff2c9"/>
+  <path d="M0 520 300 260l190 200 250-300 320 340 250-180 290 260v380H0z" fill="#5d8aa3"/>
+  <path d="M300 260l60 66-120 0zM740 160l90 120-180 0z" fill="#f4fafd"/>
+  <path d="M0 620 260 520l280 90 320-70 340 110 400-70v220H0z" fill="#4a7a53"/>
+  <path d="M0 720 400 660l400 60 400-50 400 50v60H0z" fill="#3a6442"/>
+  <path d="M120 800c120-140 320-200 560-200s440 70 560 200z" fill="#d8c9a3"/>
+  <g fill="#2f5236">
+    <path d="M1180 640l40-90 40 90zM1260 660l34-76 34 76z"/>
+  </g>
+</svg>

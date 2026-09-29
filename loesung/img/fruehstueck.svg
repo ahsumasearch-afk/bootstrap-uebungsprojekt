@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" width="800" height="560" role="img" aria-label="Fruehstuecksbuffet">
+  <rect width="800" height="560" fill="#f7f1e6"/>
+  <rect y="360" width="800" height="200" fill="#d8c6a8"/>
+  <circle cx="300" cy="330" r="110" fill="#ffffff"/>
+  <circle cx="300" cy="330" r="82" fill="#f1e7d6"/>
+  <circle cx="272" cy="316" r="34" fill="#fffdf7"/><circle cx="272" cy="316" r="15" fill="#f2b52e"/>
+  <rect x="316" y="296" width="70" height="46" rx="6" fill="#c98f5a"/>
+  <rect x="560" y="250" width="120" height="110" rx="10" fill="#ffffff"/>
+  <rect x="580" y="278" width="80" height="60" rx="6" fill="#6b4226"/>
+  <path d="M680 274h20a26 26 0 0 1 0 52h-20" fill="none" stroke="#ffffff" stroke-width="14"/>
+  <circle cx="500" cy="330" r="26" fill="#d9534f"/>
+  <circle cx="540" cy="340" r="20" fill="#e8a33d"/>
+  <path d="M120 300c0-40 30-70 70-70v70z" fill="#7fae4e"/>
+</svg>

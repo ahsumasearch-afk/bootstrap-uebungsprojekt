@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 800" width="1600" height="800" role="img" aria-label="Terrasse mit Aussicht">
+  <rect width="1600" height="800" fill="#f6d9a8"/>
+  <circle cx="1220" cy="220" r="90" fill="#ffb865"/>
+  <path d="M0 480 280 300l220 180 260-220 300 240 240-140 300 200v320H0z" fill="#8a6a86"/>
+  <rect y="600" width="1600" height="200" fill="#a9825c"/>
+  <g fill="#7c5c3e">
+    <rect x="0" y="600" width="1600" height="12"/>
+    <rect x="0" y="660" width="1600" height="8"/>
+  </g>
+  <g fill="#3e5f6b">
+    <rect x="200" y="520" width="200" height="16" rx="8"/>
+    <rect x="212" y="536" width="14" height="70"/><rect x="374" y="536" width="14" height="70"/>
+    <rect x="1100" y="520" width="200" height="16" rx="8"/>
+    <rect x="1112" y="536" width="14" height="70"/><rect x="1274" y="536" width="14" height="70"/>
+  </g>
+  <circle cx="300" cy="500" r="18" fill="#ffffff"/>
+  <circle cx="1200" cy="500" r="18" fill="#ffffff"/>
+  <path d="M640 620V420h40v200z" fill="#6b5844"/>
+  <path d="M520 420h280l-140-120z" fill="#d95f4f"/>
+</svg>

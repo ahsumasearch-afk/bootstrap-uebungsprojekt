@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" role="img" aria-label="Schematische Karte der Lage">
+  <rect width="800" height="500" fill="#e8eee8"/>
+  <path d="M0 150h800M0 330h800M220 0v500M560 0v500" stroke="#ffffff" stroke-width="18"/>
+  <path d="M0 240 800 60" stroke="#cfe0ef" stroke-width="34"/>
+  <rect x="40" y="30" width="140" height="90" rx="6" fill="#d7ddd7"/>
+  <rect x="260" y="30" width="250" height="90" rx="6" fill="#d7ddd7"/>
+  <rect x="600" y="180" width="160" height="120" rx="6" fill="#cfd9cf"/>
+  <rect x="40" y="370" width="150" height="100" rx="6" fill="#d7ddd7"/>
+  <rect x="260" y="370" width="250" height="100" rx="6" fill="#cfd9cf"/>
+  <g>
+    <path d="M390 300c0-30 25-52 55-52s55 22 55 52c0 38-55 82-55 82s-55-44-55-82z" fill="#d9534f"/>
+    <circle cx="445" cy="298" r="20" fill="#ffffff"/>
+  </g>
+  <text x="445" y="410" text-anchor="middle" font-family="Verdana, sans-serif" font-size="22" fill="#1d3b53">Hostel</text>
+  <text x="140" y="200" font-family="Verdana, sans-serif" font-size="18" fill="#6a7a6a">Altstadt</text>
+  <text x="620" y="360" font-family="Verdana, sans-serif" font-size="18" fill="#6a7a6a">Bahnhof</text>
+</svg>

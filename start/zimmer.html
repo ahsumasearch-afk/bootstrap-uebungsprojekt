@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zimmer & Preise – Bergsteiger Hostel Innsbruck</title>
+  <link rel="icon" href="img/logo-dunkel.svg">
+  <!-- Bootstrap 5.3 vom CDN. Muss VOR dem eigenen CSS stehen. -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/eigenes.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Ziel dieser Seite: siehe vorschau/zimmer.png und loesung/zimmer.html
+
+     1  Navigation      Dieselbe wie auf index.html – kopieren und
+                        den aktiven Link umhängen.
+     2  Seitenkopf      Dunkler Streifen mit Breadcrumb, h1 und Lead-Absatz.
+     3  Zimmerliste     3 Blöcke aus Bild + Text. Beim mittleren Block
+                        liegt das Bild ab lg rechts.
+                        Jeder Block endet mit einem Button, der ein Modal öffnet.
+     4  Preistabelle    Gestreifte Tabelle mit Kopfzeile, Caption und
+                        waagerechtem Scrollen auf dem Handy.
+                        Darunter ein Hinweis als Alert.
+     5  Häufige Fragen  Accordion mit 4 Fragen. Nur eine ist gleichzeitig offen.
+     6  Modal           Zeigt an, welches Zimmer angeklickt wurde
+                        (data-Attribut + ein paar Zeilen JavaScript, siehe unten).
+     7  Fußbereich      Wie auf index.html.
+-->
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  // Fertig vorgegeben: liest data-zimmer vom angeklickten Button
+  // und schreibt den Wert ins Modal. Du brauchst dafür im HTML:
+  //   - ein Modal mit der id "anfrageModal"
+  //   - darin ein Element mit der id "gewaehltesZimmer"
+  //   - Buttons mit data-bs-toggle="modal" data-bs-target="#anfrageModal"
+  //     und data-zimmer="Schlafsaal" (bzw. Doppelzimmer, Familienzimmer)
+  const anfrageModal = document.getElementById('anfrageModal');
+  anfrageModal.addEventListener('show.bs.modal', (ereignis) => {
+    const zimmer = ereignis.relatedTarget.getAttribute('data-zimmer');
+    document.getElementById('gewaehltesZimmer').textContent = zimmer;
+  });
+</script>
+</body>
+</html>

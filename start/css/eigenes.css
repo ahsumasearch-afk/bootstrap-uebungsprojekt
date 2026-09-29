@@ -1,0 +1,59 @@
+/* =========================================================
+   Bergsteiger Hostel – dein eigenes CSS ÜBER Bootstrap
+
+   Diese Datei wird NACH bootstrap.min.css geladen und darf
+   deshalb Bootstrap überschreiben.
+
+   Wichtigste Regel dieser Übung:
+   Alles, was Bootstrap kann, macht Bootstrap. Hier landet nur,
+   was mit Bootstrap-Klassen wirklich nicht geht.
+   Wenn diese Datei länger als 100 Zeilen wird, hast du zu viel
+   selbst geschrieben.
+   ========================================================= */
+
+/* ---------- Farben (schon vorgegeben) ---------- */
+:root {
+  --berg: #1d3b53;
+  --berg-hell: #2c5573;
+  --gelb: #f0a500;
+
+  /* So überschreibt man Bootstrap-Variablen: */
+  --bs-body-font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --bs-body-color: #2c3338;
+  --bs-link-color: var(--berg);
+  --bs-link-hover-color: var(--berg-hell);
+  --bs-warning: var(--gelb);
+  --bs-warning-rgb: 240, 165, 0;
+}
+
+/* ---------- Ab hier bist du dran ----------
+
+   Diese Dinge brauchst du (der Rest geht mit Bootstrap-Klassen):
+
+   .bg-berg / .bg-berg-hell / .text-berg
+       eigene Farb-Hilfsklassen, Aufbau wie bei Bootstrap (mit !important)
+
+   .btn-berg / .btn-outline-berg
+       eigene Button-Varianten. Trick: nicht background-color setzen,
+       sondern Bootstraps Variablen im Button überschreiben, z. B.
+       .btn-berg { --bs-btn-bg: var(--berg); --bs-btn-hover-bg: ... }
+
+   .table-berg
+       dunkle Kopfzeile für die Preistabelle (--bs-table-bg)
+
+   .hero
+       Hintergrundbild img/hero.svg mit dunklem Verlauf darüber,
+       background-size: cover, Mindesthöhe ca. 78vh
+       (auf kleinen Screens weniger)
+
+   .carousel-caption
+       lesbarer machen: halbtransparenter dunkler Hintergrund
+
+   .carousel-control-prev-icon / -next-icon
+       die Pfeile sind auf hellen Bildern kaum zu sehen
+
+   .accordion
+       in unseren Farben statt im Bootstrap-Blau (--bs-accordion-active-bg)
+
+   Optional: eine kleine Hover-Bewegung für .card
+*/

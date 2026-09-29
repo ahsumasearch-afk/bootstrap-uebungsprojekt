@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zimmer &amp; Preise – Bergsteiger Hostel Innsbruck</title>
+  <meta name="description" content="Schlafsaal ab 24 €, Doppelzimmer ab 68 €, Familienzimmer ab 96 € – alle Preise und Antworten auf häufige Fragen.">
+  <link rel="icon" href="img/logo-dunkel.svg">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/eigenes.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- ===== Navigation ===== -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-berg sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <img src="img/logo.svg" alt="Bergsteiger Hostel" height="36">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#hauptmenue"
+            aria-controls="hauptmenue" aria-expanded="false" aria-label="Menü anzeigen">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="hauptmenue">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="index.html">Start</a></li>
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="zimmer.html">Zimmer &amp; Preise</a></li>
+        <li class="nav-item"><a class="nav-link" href="kontakt.html">Kontakt</a></li>
+      </ul>
+      <a class="btn btn-warning ms-lg-3" href="kontakt.html">Anfragen</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== Seitenkopf ===== -->
+<header class="bg-berg text-white py-5">
+  <div class="container">
+    <nav aria-label="Brotkrumen">
+      <ol class="breadcrumb mb-3">
+        <li class="breadcrumb-item"><a class="link-light" href="index.html">Start</a></li>
+        <li class="breadcrumb-item active text-white-50" aria-current="page">Zimmer &amp; Preise</li>
+      </ol>
+    </nav>
+    <h1 class="fw-bold">Zimmer &amp; Preise</h1>
+    <p class="lead mb-0 opacity-75">Alle Preise pro Nacht, Frühstück und Bettwäsche sind immer dabei.</p>
+  </div>
+</header>
+
+<!-- ===== Zimmerliste ===== -->
+<section class="py-5">
+  <div class="container">
+
+    <article class="row g-4 align-items-center mb-5">
+      <div class="col-lg-6">
+        <img src="img/zimmer-schlafsaal.svg" class="img-fluid rounded-4 shadow-sm" alt="Schlafsaal mit Etagenbetten">
+      </div>
+      <div class="col-lg-6">
+        <span class="badge text-bg-success mb-2">Beliebt</span>
+        <h2 class="fw-bold">Schlafsaal</h2>
+        <p class="text-secondary">
+          Sechs oder acht Betten, jedes mit Vorhang, Leselampe, zwei Steckdosen und
+          einem Schließfach, in das ein 60-Liter-Rucksack passt.
+        </p>
+        <ul class="list-unstyled d-flex flex-wrap gap-3 mb-4">
+          <li class="d-flex gap-2 align-items-center"><img src="icons/bett.svg" alt="" width="20" height="20"><span class="small">6 oder 8 Betten</span></li>
+          <li class="d-flex gap-2 align-items-center"><img src="icons/dusche.svg" alt="" width="20" height="20"><span class="small">Bad auf der Etage</span></li>
+          <li class="d-flex gap-2 align-items-center"><img src="icons/wlan.svg" alt="" width="20" height="20"><span class="small">WLAN</span></li>
+        </ul>
+        <p class="h3 text-berg mb-3">ab 24 € <span class="fs-6 text-secondary fw-normal">pro Bett und Nacht</span></p>
+        <button class="btn btn-berg" data-bs-toggle="modal" data-bs-target="#anfrageModal" data-zimmer="Schlafsaal">Anfragen</button>
+      </div>
+    </article>
+
+    <article class="row g-4 align-items-center mb-5">
+      <div class="col-lg-6 order-lg-2">
+        <img src="img/zimmer-doppel.svg" class="img-fluid rounded-4 shadow-sm" alt="Doppelzimmer mit Balkon">
+      </div>
+      <div class="col-lg-6">
+        <span class="badge text-bg-secondary mb-2">Eigenes Bad</span>
+        <h2 class="fw-bold">Doppelzimmer</h2>
+        <p class="text-secondary">
+          Zum ruhigen Innenhof, mit Schreibtisch, kleinem Balkon nach Süden und
+          einem Bad, das du mit niemandem teilst.
+        </p>
+        <ul class="list-unstyled d-flex flex-wrap gap-3 mb-4">
+          <li class="d-flex gap-2 align-items-center"><img src="icons/bett.svg" alt="" width="20" height="20"><span class="small">2 Personen</span></li>
+          <li class="d-flex gap-2 align-items-center"><img src="icons/dusche.svg" alt="" width="20" height="20"><span class="small">Eigenes Bad</span></li>
+          <li class="d-flex gap-2 align-items-center"><img src="icons/schluessel.svg" alt="" width="20" height="20"><span class="small">Zimmersafe</span></li>
+        </ul>
+        <p class="h3 text-berg mb-3">ab 68 € <span class="fs-6 text-secondary fw-normal">pro Zimmer und Nacht</span></p>
+        <button class="btn btn-berg" data-bs-toggle="modal" data-bs-target="#anfrageModal" data-zimmer="Doppelzimmer">Anfragen</button>
+      </div>
+    </article>
+
+    <article class="row g-4 align-items-center">
+      <div class="col-lg-6">
+        <img src="img/zimmer-familie.svg" class="img-fluid rounded-4 shadow-sm" alt="Familienzimmer">
+      </div>
+      <div class="col-lg-6">
+        <span class="badge text-bg-info mb-2">Bis 5 Personen</span>
+        <h2 class="fw-bold">Familienzimmer</h2>
+        <p class="text-secondary">
+          Doppelbett und Etagenbett in einem Raum, dazu ein Tisch, an dem alle
+          gleichzeitig frühstücken können. Kinderbett auf Wunsch kostenlos.
+        </p>
+        <ul class="list-unstyled d-flex flex-wrap gap-3 mb-4">
+          <li class="d-flex gap-2 align-items-center"><img src="icons/bett.svg" alt="" width="20" height="20"><span class="small">4–5 Personen</span></li>
+          <li class="d-flex gap-2 align-items-center"><img src="icons/dusche.svg" alt="" width="20" height="20"><span class="small">Eigenes Bad</span></li>
+          <li class="d-flex gap-2 align-items-center"><img src="icons/waschen.svg" alt="" width="20" height="20"><span class="small">Waschküche gratis</span></li>
+        </ul>
+        <p class="h3 text-berg mb-3">ab 96 € <span class="fs-6 text-secondary fw-normal">pro Zimmer und Nacht</span></p>
+        <button class="btn btn-berg" data-bs-toggle="modal" data-bs-target="#anfrageModal" data-zimmer="Familienzimmer">Anfragen</button>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ===== Preistabelle ===== -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="fw-bold mb-4">Preise nach Saison</h2>
+    <div class="table-responsive">
+      <table class="table table-striped table-hover align-middle bg-white">
+        <caption class="px-2">Alle Preise in Euro, inklusive Frühstück, Bettwäsche und Kurtaxe.</caption>
+        <thead class="table-berg">
+          <tr>
+            <th scope="col">Zimmerart</th>
+            <th scope="col">Nebensaison</th>
+            <th scope="col">Hauptsaison</th>
+            <th scope="col">Weihnachten</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row" class="fw-normal">Schlafsaal, 8 Betten</th>
+            <td>24</td><td>29</td><td>34</td>
+          </tr>
+          <tr>
+            <th scope="row" class="fw-normal">Schlafsaal, 6 Betten</th>
+            <td>28</td><td>33</td><td>38</td>
+          </tr>
+          <tr>
+            <th scope="row" class="fw-normal">Doppelzimmer</th>
+            <td>68</td><td>84</td><td>98</td>
+          </tr>
+          <tr>
+            <th scope="row" class="fw-normal">Familienzimmer</th>
+            <td>96</td><td>118</td><td>136</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="alert alert-warning d-flex gap-3 align-items-start" role="alert">
+      <img src="icons/uhr.svg" alt="" width="24" height="24">
+      <div>
+        <strong>Ab 5 Nächten</strong> ziehen wir 10 % ab – das rechnen wir automatisch in der Bestätigung heraus.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Häufige Fragen ===== -->
+<section class="py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        <h2 class="fw-bold mb-4">Häufige Fragen</h2>
+        <div class="accordion" id="fragen">
+
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#frage1" aria-expanded="true" aria-controls="frage1">
+                Wann kann ich einchecken?
+              </button>
+            </h3>
+            <div id="frage1" class="accordion-collapse collapse show" data-bs-parent="#fragen">
+              <div class="accordion-body">
+                Ab 15 Uhr. Wenn du früher da bist, kannst du dein Gepäck im Raum neben der
+                Rezeption abstellen und schon mal losziehen. Auschecken bis 10 Uhr.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#frage2" aria-expanded="false" aria-controls="frage2">
+                Gibt es Parkplätze?
+              </button>
+            </h3>
+            <div id="frage2" class="accordion-collapse collapse" data-bs-parent="#fragen">
+              <div class="accordion-body">
+                Sechs Stellplätze im Innenhof für 9 € die Nacht, Reservierung nötig.
+                Für Räder gibt es einen abschließbaren Keller, der kostet nichts.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#frage3" aria-expanded="false" aria-controls="frage3">
+                Dürfen Hunde mit?
+              </button>
+            </h3>
+            <div id="frage3" class="accordion-collapse collapse" data-bs-parent="#fragen">
+              <div class="accordion-body">
+                In den Doppel- und Familienzimmern ja, 12 € pro Nacht. In den Schlafsälen
+                leider nicht – zu viele Gäste mit Allergien.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#frage4" aria-expanded="false" aria-controls="frage4">
+                Kann ich kostenlos stornieren?
+              </button>
+            </h3>
+            <div id="frage4" class="accordion-collapse collapse" data-bs-parent="#fragen">
+              <div class="accordion-body">
+                Bis 48 Stunden vorher ja, danach berechnen wir die erste Nacht.
+                Eine kurze Mail reicht uns.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Modal für die Anfrage ===== -->
+<div class="modal fade" id="anfrageModal" tabindex="-1" aria-labelledby="anfrageModalTitel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title h5" id="anfrageModalTitel">Zimmer anfragen</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Schließen"></button>
+      </div>
+      <div class="modal-body">
+        <p class="text-secondary">
+          Gewähltes Zimmer: <strong id="gewaehltesZimmer">–</strong>
+        </p>
+        <p class="mb-0">
+          Schreib uns kurz, wann du kommen möchtest und mit wie vielen Leuten.
+          Wir antworten meistens noch am selben Tag.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Abbrechen</button>
+        <a href="kontakt.html" class="btn btn-berg">Zum Kontaktformular</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== Fußbereich ===== -->
+<footer class="bg-berg text-white pt-5 pb-4">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <img src="img/logo.svg" alt="Bergsteiger Hostel" height="40" class="mb-3">
+        <p class="small opacity-75 mb-0">Ein Übungsprojekt für HTML, CSS und Bootstrap 5. Das Hostel ist erfunden.</p>
+      </div>
+      <div class="col-6 col-md-3">
+        <h3 class="h6 text-uppercase fw-bold mb-3">Seiten</h3>
+        <ul class="list-unstyled small">
+          <li class="mb-2"><a class="link-light text-decoration-none" href="index.html">Start</a></li>
+          <li class="mb-2"><a class="link-light text-decoration-none" href="zimmer.html">Zimmer &amp; Preise</a></li>
+          <li class="mb-2"><a class="link-light text-decoration-none" href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md-2">
+        <h3 class="h6 text-uppercase fw-bold mb-3">Kontakt</h3>
+        <ul class="list-unstyled small opacity-75">
+          <li class="mb-2">Bergweg 14<br>6020 Innsbruck</li>
+          <li class="mb-2">+43 512 123456</li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h3 class="h6 text-uppercase fw-bold mb-3">Folgen</h3>
+        <div class="d-flex gap-3">
+          <a href="#" aria-label="Instagram"><img src="icons/instagram.svg" alt="" width="24" height="24"></a>
+          <a href="#" aria-label="Facebook"><img src="icons/facebook.svg" alt="" width="24" height="24"></a>
+          <a href="#" aria-label="Twitter"><img src="icons/twitter.svg" alt="" width="24" height="24"></a>
+        </div>
+      </div>
+    </div>
+    <hr class="border-light opacity-25 my-4">
+    <p class="small opacity-75 mb-0">© 2026 Bergsteiger Hostel Innsbruck</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  // Zeigt im Modal an, welches Zimmer angeklickt wurde
+  const anfrageModal = document.getElementById('anfrageModal');
+  anfrageModal.addEventListener('show.bs.modal', (ereignis) => {
+    const zimmer = ereignis.relatedTarget.getAttribute('data-zimmer');
+    document.getElementById('gewaehltesZimmer').textContent = zimmer;
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-label="Bergpanorama bei Sonnenaufgang">
+  <defs>
+    <linearGradient id="h" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#153048"/><stop offset=".55" stop-color="#3d6a86"/><stop offset="1" stop-color="#e5a15c"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#h)"/>
+  <circle cx="1180" cy="560" r="70" fill="#ffd27a" opacity=".9"/>
+  <path d="M0 700 240 420l150 160 180-260 220 300 190-180 260 340 360-200v320H0z" fill="#20455f"/>
+  <path d="M240 420l70 75-140 0zM570 320l80 110-160 0zM980 400l70 66-140 0z" fill="#eaf2f7"/>
+  <path d="M0 780 200 620l190 120 230-150 250 180 250-120 480 230v220H0z" fill="#16324a"/>
+  <path d="M0 860 300 760l280 70 320-90 340 110 360-60v110H0z" fill="#0f2437"/>
+  <g fill="#0b1c2c">
+    <path d="M300 800h120l-60-50z"/><path d="M700 830h140l-70-56z"/><path d="M1150 810h130l-65-52z"/>
+  </g>
+</svg>

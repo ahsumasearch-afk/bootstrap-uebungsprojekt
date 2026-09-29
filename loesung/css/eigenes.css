@@ -1,0 +1,121 @@
+/* =========================================================
+   Bergsteiger Hostel – eigenes CSS ÜBER Bootstrap
+   Wird NACH bootstrap.min.css geladen und überschreibt es.
+   Regel: so wenig eigenes CSS wie möglich. Alles, was
+   Bootstrap kann, macht Bootstrap.
+   ========================================================= */
+
+/* ---------- 1. Eigene Farben & Schrift ---------- */
+:root {
+  --berg: #1d3b53;
+  --berg-hell: #2c5573;
+  --gelb: #f0a500;
+
+  /* Bootstrap-Variablen überschreiben */
+  --bs-body-font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --bs-body-color: #2c3338;
+  --bs-link-color: var(--berg);
+  --bs-link-hover-color: var(--berg-hell);
+  --bs-warning: var(--gelb);
+  --bs-warning-rgb: 240, 165, 0;
+  --bs-border-radius-4: 1rem;
+}
+
+body {
+  font-size: 1.0625rem;
+}
+
+/* ---------- 2. Eigene Hilfsklassen im Bootstrap-Stil ---------- */
+.bg-berg      { background-color: var(--berg) !important; }
+.bg-berg-hell { background-color: var(--berg-hell) !important; }
+.text-berg    { color: var(--berg) !important; }
+
+.btn-berg {
+  --bs-btn-bg: var(--berg);
+  --bs-btn-border-color: var(--berg);
+  --bs-btn-color: #fff;
+  --bs-btn-hover-bg: var(--berg-hell);
+  --bs-btn-hover-border-color: var(--berg-hell);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-active-bg: #142a3c;
+  --bs-btn-active-border-color: #142a3c;
+}
+
+.btn-outline-berg {
+  --bs-btn-color: var(--berg);
+  --bs-btn-border-color: var(--berg);
+  --bs-btn-hover-bg: var(--berg);
+  --bs-btn-hover-border-color: var(--berg);
+  --bs-btn-hover-color: #fff;
+}
+
+.table-berg {
+  --bs-table-bg: var(--berg);
+  --bs-table-color: #fff;
+  --bs-table-border-color: var(--berg-hell);
+}
+
+/* ---------- 3. Hero ---------- */
+.hero {
+  min-height: 78vh;
+  background-image: linear-gradient(rgba(12, 28, 44, .55), rgba(12, 28, 44, .75)),
+                    url("../img/hero.svg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* ---------- 4. Feinschliff an Bootstrap-Komponenten ---------- */
+.navbar-brand img {
+  width: auto;
+}
+
+.card img {
+  background-color: #f1f3f5;
+}
+
+.card {
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+/* Accordion in unseren Farben statt im Bootstrap-Blau */
+.accordion {
+  --bs-accordion-btn-focus-box-shadow: none;
+  --bs-accordion-active-bg: rgba(29, 59, 83, .07);
+  --bs-accordion-active-color: var(--berg);
+}
+
+/* Carousel-Bildunterschrift lesbar machen */
+.carousel-caption {
+  background-color: rgba(12, 28, 44, .6);
+  border-radius: .75rem;
+  padding: 1rem 1.5rem;
+  bottom: 2rem;
+}
+
+/* Die Pfeile des Carousels sind auf hellen Bildern kaum zu sehen */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(12, 28, 44, .55);
+  border-radius: 50%;
+  padding: 1.25rem;
+  background-size: 45%;
+}
+
+/* ---------- 5. Kleinigkeiten ---------- */
+.breadcrumb {
+  --bs-breadcrumb-divider-color: rgba(255, 255, 255, .5);
+}
+
+footer a:hover {
+  text-decoration: underline !important;
+}
+
+@media (max-width: 991.98px) {
+  .hero {
+    min-height: 60vh;
+  }
+}
