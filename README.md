@@ -5,6 +5,7 @@ Dreiseitige Hostel-Website zum Nachbauen. Aufbauübung nach dem
 diesmal mit Bootstrap 5 statt handgeschriebenem Flexbox und Grid.
 
 **Vorlage ansehen:** <https://ahsumasearch-afk.github.io/bootstrap-uebungsprojekt/>
+**Alle Medien & Icons:** <https://ahsumasearch-afk.github.io/bootstrap-uebungsprojekt/medien.html>
 
 Kein Build-Werkzeug, kein npm, keine Installation – Bootstrap kommt per CDN,
 alle Bilder und Icons liegen als SVG im Projekt.
@@ -15,6 +16,9 @@ alle Bilder und Icons liegen als SVG im Projekt.
 bootstrap-uebungsprojekt/
 ├── AUFGABE.md        ← Aufgabenstellung in 10 Schritten
 ├── SPICKZETTEL.md    ← die wichtigsten Bootstrap-Klassen auf einen Blick
+├── MEDIEN.md         ← alle Bilder und Icons, mit fertigem Einbinde-Code
+├── medien.html       ← dieselbe Übersicht zum Anschauen im Browser
+├── medien.zip        ← img/ und icons/ gebündelt zum Herunterladen
 ├── vorschau/         ← Screenshots aller Seiten (das Ziel)
 ├── start/            ← hier arbeitet der Schüler
 │   ├── index.html    ← Gerüst: nur Bereichsliste, keine fertigen Klassen
@@ -54,7 +58,7 @@ Als Ziel dienen die Screenshots in `vorschau/` und die Live-Vorlage.
 1. Repo herunterladen (**Code → Download ZIP**) und entpacken.
 2. `loesung/index.html` im Browser öffnen oder die
    [Live-Vorlage](https://ahsumasearch-afk.github.io/bootstrap-uebungsprojekt/) ansehen.
-3. `AUFGABE.md` lesen, `SPICKZETTEL.md` daneben offen lassen.
+3. `AUFGABE.md` lesen, `SPICKZETTEL.md` und `MEDIEN.md` daneben offen lassen.
 4. In `start/` arbeiten.
 
 ## Lizenz

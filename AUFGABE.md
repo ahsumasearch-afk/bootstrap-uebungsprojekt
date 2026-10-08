@@ -26,6 +26,10 @@ Bootstrap-Komponente gemeint ist. Die passenden Klassen suchst du selbst –
 im [Spickzettel](SPICKZETTEL.md) oder in der
 [Bootstrap-Doku](https://getbootstrap.com/docs/5.3/).
 
+Alle Bilder und Icons liegen schon in `start/img/` und `start/icons/`.
+Welche Datei wohin gehört und wie du sie einbindest, steht in
+[MEDIEN.md](MEDIEN.md) – oder zum Anschauen in [medien.html](medien.html).
+
 **Schau erst in die Lösung, wenn du eine Stelle wirklich nicht hinbekommst.**
 Zwanzig Minuten selbst probieren bringt mehr als zwei Minuten abschreiben.
 
