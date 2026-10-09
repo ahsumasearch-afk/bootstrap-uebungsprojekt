@@ -119,7 +119,7 @@ Teste, was passiert, wenn du leer absendest.
 ### Schritt 10 – Bootstrap in eigenen Farben
 Zum Schluss der Feinschliff, damit die Seite nicht nach Standard-Bootstrap aussieht:
 eigene Button-Varianten (`.btn-berg`), eigene Farb-Hilfsklassen und ein
-Accordion in Blau statt in Bootstrap-Blau. Der saubere Weg dafür sind
+Accordion in unseren Farben statt im Bootstrap-Blau. Der saubere Weg dafür sind
 **CSS-Variablen**, nicht `!important` auf alles:
 
 ```css
